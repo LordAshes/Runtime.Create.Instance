@@ -1,5 +1,5 @@
 # Runtime.Create.Instance
-This is a library for instancing classes in external libraries based on interface name.
+This is a library for instancing classes in external libraries based on interface name at runtime. This allows applications to use different interface implementations without having to change code in order to swap implementations.
 
 ## Purpose
 
