@@ -58,3 +58,7 @@ or with construction parameters:
 ```
 dynamic clock = Runtime.Create.Instance("Time.ITime", args[0], new object[] { "Toronto", -5 } );
 ```
+
+## Limitation
+
+The library finds the first type to match the desired interface name and tries to instance that type using the provided constructors (if any). This means that a single external library cannot have more than one implementation of the interface. More specifically, an external library can have multiple implementations of an interface but only the first will be recognized by the library. Typically this is not a problem since each implementation of an interface is typically its own external library to allow it to be versioned individually but it can become an issue with external libraries which provide a few variations of an implementation. In such cases, the variations should be made as a single implementation with constructor parameters (or other methods) to switch between the variations.
