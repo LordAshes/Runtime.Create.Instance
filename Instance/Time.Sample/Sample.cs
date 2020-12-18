@@ -13,8 +13,13 @@ namespace Time
         static void Main(string[] args)
         {
             //
-            // For this simple example the external DLL libray to be used is provided as the first argument.
-            // In a actual applictaion implementation the choice of external library could be configured in a configuration file. 
+            // For this simple example the external DLL libray to be used is provided as the first command line argument.
+            //
+            // Time.Sample.exe Time.ClockType1.dll
+            // 
+            // Time.Sample.exe Time.ClockType2.dll
+            //
+            // In an actual application implementation the choice of external library could be configured in a configuration file. 
             //
 
             //
