@@ -46,3 +46,15 @@ or with construction parameters:
 ```
 ITime clock = Runtime.Create.Instance("Time.ITime", args[0], new object[] { "Toronto", -5 } );
 ```
+
+Which, as discusssed above, can be also kept as dynamic and thus not requiring the base application to instance the interface:
+
+```
+dynamic clock = Runtime.Create.Instance("Time.ITime", args[0]);
+```
+
+or with construction parameters:
+
+```
+dynamic clock = Runtime.Create.Instance("Time.ITime", args[0], new object[] { "Toronto", -5 } );
+```
